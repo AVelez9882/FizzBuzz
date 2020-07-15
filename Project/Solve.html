@@ -17,6 +17,7 @@
     <script src="Scripts/jquery-3.5.1.min.js"></script>
     <link rel="shortcut icon" href="favicon.ico">
     <link href="CSS/prism.css" rel="stylesheet" />
+    <link href="CSS/Style.css" rel="stylesheet" />
 
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
@@ -33,44 +34,119 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/Index.html">
                             Home
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/Solve.html">Solve</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
+                        <a target="_blank" class="nav-link" href="https://github.com/AVelez9882/FizzBuzz">Git</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a target="_blank" class="nav-link" href="https://av-portfolio.netlify.app">Portfolio</a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Page Content -->
-    <!--<div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">FizzBuzz</h1>
-                <p class="lead">This page will display your JS exercise</p>
-                <ul class="list-unstyled">
-                    <li>The Javascript Exercise</li>
-                    <li>Is placed on this page</li>
-                </ul>
+    <div class="bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center h1 sumColor elWide">FizzBuzz</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 elWide textBox">
+                    <h3 class="text-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center h3">
+                                    Please enter two integers that we will refer to as FizzNum and BuzzNum.
+                                </div>
+                            </div>
+                        </div>
+                    </h3>
+                </div>
             </div>
         </div>
-    </div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <input id="fbInput1" type="number" style="border-radius: 5px" class="kClass" placeholder="Enter Fizz Num" />
+                    <input id="fbInput2" type="number" style="border-radius: 5px" class="kClass" placeholder="Enter Buzz Num" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-light text-center btnMarg" style="width:40%; border-radius: 5px" id="btnFB">Run Fizz-Buzz</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p id="fbOut"></p>
+                </div>
+            </div>
+        </div>
+
+        <!--<script>
+			var input = document.getElementById("fbInput2");
+			input.addEventListener("keyup", function (event) {
+				if (event.keyCode === 13) {
+					event.preventDefault();
+					document.getElementById("btnFB").click();
+				}
+			});
+
+            $("#btnFB").on("click", function () {
+                let fizzMod = 0;
+                let buzzMod = 0;
+                //let output = "";
+                let output = new Array();
+
+                let fizzNum = parseInt($("#fbInput1").val());
+                let buzzNum = parseInt($("#fbInput2").val());
+
+                for (let loop = 1; loop <= 100; loop++) {
+                    fizzMod = loop % fizzNum;
+                    buzzMod = loop % buzzNum;
+
+                    if (fizzMod == 0 && buzzMod == 0) {
+                        //output += "<span class='fizzbuzz'>FizzBuzz</span>, ";
+                        output.push("<span class='fizzbuzz'>FizzBuzz</span>")
+                    }
+                    else if (fizzMod == 0) {
+                        //output += "<span class='fizz'>Fizz</span>, ";
+                        output.push("<span class='fizz'>Fizz</span>")
+                    }
+                    else if (buzzMod == 0) {
+                        //output += "<span class='buzz'>Buzz</span >, ";
+                        output.push("<span class='buzz'>Buzz</span>")
+                    }
+                    else {
+                        //output += loop + ",";
+                        output.push(loop);
+                    }
+                }
+
+                output = output.substr(0, output.length);
+
+                $("#fbOut").html(output.join(', ')
+            });
+        </script>-->
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
