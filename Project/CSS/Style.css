@@ -1,4 +1,4 @@
-﻿.bg {
+﻿body {
 	/* The image used */
 	background-image: url(/Img/fizz.jpg);
 	/* Full height */
@@ -10,7 +10,7 @@
 }
 
 .fizz {
-	color: yellow;
+	color: red;
 }
 
 .buzz {
@@ -18,7 +18,7 @@
 }
 
 .fizzbuzz {
-	color: green;
+	color: purple;
 }
 
 .textBox {
