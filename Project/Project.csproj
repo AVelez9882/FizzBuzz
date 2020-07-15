@@ -80,6 +80,7 @@
     <Content Include="Scripts\prism.js" />
     <Content Include="Solve.html" />
     <Content Include="CSS\Style.css" />
+    <Content Include="Scripts\Solve.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
