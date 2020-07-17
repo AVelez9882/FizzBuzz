@@ -83,11 +83,14 @@
                 <input id="fbInput2" type="number" style="border-radius: 5px" class="kClass" placeholder="Enter Buzz Num" />
             </div>
         </div>
-    </div>
-    <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 <button id="btnFB" class="btn btn-outline-light text-center btnMarg" style="width:40%; border-radius: 5px">Run Fizz-Buzz</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button id="clrBtn" class="btn btn-outline-light text-center btnMarg" style="width:40%; border-radius: 5px">Clear</button>
             </div>
         </div>
     </div>
@@ -98,6 +101,7 @@
             </div>
         </div>
     </div>
+
 
     <script>
         // allow the use to press enter to begin function
@@ -144,6 +148,13 @@
             $("#fbOut").html(output.join(', '));
 			$("#fbOutBox").show();
         });
+
+        $("#clrBtn").on("click", function () {
+            $("#fbInput1").val("");
+			$("#fbInput2").val("");
+			$("#fbOutBox").hide();
+		});
+		
     </script>
 
     <!-- Bootstrap core JavaScript -->
